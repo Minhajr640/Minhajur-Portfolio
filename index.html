@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+</head>
+<body>
+    <nav id="desktop-nav">
+    <div class="logo">Minhajur Rahman</div>
+    <div>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Minhajur Rahman</div>
+        <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="menu-links">
+            <li><a href="#about" onclick="toggleMenu()">About</a></li>
+            <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+            <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+    </div>
+    </nav>
+    <section id="profile">
+    <div class="section__pic-container">
+        <img src="./assets/IMG_0734-modified.png" alt="Minhajur Rahman profile picture" />
+    </div>
+    <div class="section__text">
+        <p class="section__text__p1"> Hello, I'm</p>
+        <h1 class="title">Minhajur Rahman</h1>
+        <p class="section__text__p2"> Aspiring Software Engineer</p>
+        <div class="btn-container">
+            <button 
+            class="btn btn-color-2" 
+            onclick="window.open('assets/minhajur-rahman-resume-se.pdf')"
+            >
+            Download CV 
+        </button>
+        <button 
+        class="btn btn-color-1" 
+        onclick="location.href='./#contact'"
+        >
+        Contact Info
+    </button>
+        </div>
+    <div id ="socials-container">
+        <img src="./assets/linkedin.png" alt="My LinkedIn Profile"
+        class="icon" onclick="location.href='https://www.linkedin.com/in/minhajur-rahman-5a4860222/'"/>
+        <img src="./assets/github.png" alt="My LinkedIn Profile"
+        class="icon" onclick="location.href='https://github.com/Minhajr640'"/>
+    </div>
+    </div>
+    </section>
+    <section id="about">
+        <p class="section__text__p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <!--<div class="section__pic-container">
+                <img src="./assets/about-pic.png" alt="Profile Picture" class="about-pic"/>
+            </div> -->
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img src="./assets/education.png" alt="Experience Icon" class="icon"/>
+                        <h3>Education</h3>
+                        <p>BBA Computer Information Systems<br /> CUNY Baruch College</p>
+                    </div>
+                    <div class="details-container">
+                        <img src="./assets/experience.png" alt="Education Icon" class="icon"/>
+                        <h3>Certificates</h3>
+                        <p>Coursera <br />Data Analytics</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p>
+                        I am an aspiring Software Engineer passionate about learning the various technologies needed to build and deploy software. 
+                        My journey in Computer Science started in college when I chose CIS as my major to get into the field of Data Analytics. 
+                        To work towards that goal I completed a certificate course for Data Analytics that has taught me fundementals for each step of 
+                        data analysis. However, i pivoted to Software Engineering after joining a beginner Software Engineering program post graduation
+                        where I first gained exposure to software development. Since then, I have completed a training program that has taught me the fundementals 
+                        of Java, Spring, Rest and more. What excites me most about this field is the vast amount of technologies that exist and how each developer 
+                        can choose the technologies that work best for them to build unique and personalized applications. 
+                        I am excited to continue my learning in this field and look forward to being part of a Software Engineering team.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <img src="assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'"/>
+    </section>
+    <section id="experience"> 
+        <p class="section__text__p1"> Explore My</p>
+        <h1 class="title">Skills</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Backend Development</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience Icon"
+                            class="icon"
+                            />
+                            <div>
+                                <h3>Java</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience Icon"
+                            class="icon"
+                            />
+                            <div>
+                                <h3>Spring</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience Icon"
+                            class="icon"
+                            />
+                            <div>
+                                <h3>Rest APIs</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience Icon"
+                            class="icon"
+                            />
+                            <div>
+                                <h3>SQL</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience Icon"
+                            class="icon"
+                            />
+                            <div>
+                                <h3>JDBC</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience Icon"
+                            class="icon"
+                            />
+                            <div>
+                                <h3>Javalin</h3>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Frontend Development</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience Icon"
+                            class="icon"
+                            />
+                            <div>
+                                <h3>HTML</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience Icon"
+                            class="icon"
+                            />
+                            <div>
+                                <h3>CSS</h3>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'"/>
+    </section>
+    <section id="projects">
+        <p class="section__text__p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <h2>Spring Social Media Blog</h2>
+                    <p>For this project, I developed the controller, service, and data repository layers for the backend API of a Social Media Blog using Spring Boot. Each layer was configured using Spring's stereotype annotations. For the data repository layer, I implemented JPARepository interface, which provides easy access to database interactions while reducing boilerplate code. I also developed service layers for business logic and to abstract the database access implementations provided by the repository class. Finally, I created a controller layer annotated with @RestController and used Spring Boots request mapping methods to map requests to their respective methods and returned the responses using HttpEntity class. Throughout the application, constructor injections was used to provide dependencies for each class. </p>
+                </div>`
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" 
+                    onclick="location.href='https://github.com/Minhajr640/Minhajr640-pep-spring-project'">
+                    Github
+                    </button>
+                </div>
+            </div>
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <h2>Rest Social Media Blog</h2>
+                    <p>For this project, I developed the controller, service, and data access layers for the backend API for a Social Media Blog. In the data access layer, I used JDBC to handle data persistence, making sure data was being stored in the database in a consistent manner and retrieved  accurately for user requests. I also implemented service layers to implement the business logic for each type of request where filtering and input validation was implemented. Finally, in the controller layer, I utilized Javalins Context object along with Jackson's Object Mapper class to handle incoming requests and send back appropriate responses. Using this layered architecture, I developed a backend API that abstracts data access layer from users, processes their requests, and ensures data is handled effectively.     </p>
+                </div>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" 
+                    onclick="location.href='https://github.com/Minhajr640/Minhajr640-pep-project'">
+                    Github
+                    </button>
+                </div>
+            </div>
+        </div>
+        </div>
+        <img src="assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'"/>
+    </section>
+    <section id="contact">
+        <p class="section__text__p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img
+                src="assets/email.png"
+                alt="Email icon"
+                class="icon contact-icon email-icon"
+                />
+                <p><a href="mailto:minhajr640@gmail.com"> Minhajr640@gmail.com </a></p>
+            </div>
+            <div class="contact-info-container">
+                <img
+                src="assets/linkedin.png"
+                alt="LinkedIn icon"
+                class="icon contact-icon"
+                />
+                <p><a href="https://www.linkedin.com/in/minhajur-rahman-5a4860222/"> LinkedIn </a></p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; 2025 Minhajur Rahman. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
